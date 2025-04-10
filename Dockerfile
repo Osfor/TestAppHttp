@@ -22,7 +22,7 @@ FROM base AS final
 WORKDIR /app
 COPY --from=publish /app/publish .
 
-ENTRYPOINT dotnet TestApp.dll --environment=HttpOnly
+ENTRYPOINT dotnet TestApp.dll
 
 
 
